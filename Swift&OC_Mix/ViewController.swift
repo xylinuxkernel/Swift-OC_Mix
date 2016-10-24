@@ -52,6 +52,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             cell = UITableViewCell(style: .Default, reuseIdentifier: ideifier)
         }
         cell?.textLabel?.text = data[indexPath.row]
+        NSUserDefaults.standardUserDefaults().setObject(<#T##value: AnyObject?##AnyObject?#>, forKey: <#T##String#>)
+        NSUserDefaults.standardUserDefaults().objectForKey(<#T##defaultName: String##String#>)
         return cell!
         
     }
